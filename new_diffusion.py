@@ -100,3 +100,9 @@ state = [
     [146, 168, 33, 80],
     [199, 159, 195, 24],
     [64, 80, 182, 255],
+]
+
+
+def sub_bytes(s, sbox=s_box):
+    return "".join(list(map(chr, [sbox[j] for sublist in s for j in sublist])))
+
