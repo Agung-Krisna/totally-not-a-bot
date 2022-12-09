@@ -124,3 +124,15 @@ matrix = [
     [99, 114, 121, 112],
     [116, 111, 123, 105],
     [110, 109, 97, 116],
+    [114, 105, 120, 125],
+]
+
+print(matrix2bytes(matrix))print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+
+def bytes2matrix(text):
+    """ Converts a 16-byte array into a 4x4 matrix.  """
