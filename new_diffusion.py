@@ -232,3 +232,36 @@ state = [
 def sub_bytes(s, sbox=s_box):
     return "".join(list(map(chr, [sbox[j] for sublist in s for j in sublist])))
 
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
