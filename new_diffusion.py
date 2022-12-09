@@ -172,3 +172,9 @@ def inv_mix_columns(s):
 state = [
     [108, 106, 71, 86],
     [96, 62, 38, 72],
+    [42, 184, 92, 209],
+    [94, 79, 8, 54],
+]
+
+def matrix2bytes(s):
+    return "".join(list(map(chr, [i for sublist in s for i in sublist])))
