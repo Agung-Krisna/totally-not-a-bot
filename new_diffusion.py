@@ -118,3 +118,9 @@ def bytes2matrix(text):
     return [list(text[i:i+4]) for i in range(0, len(text), 4)]
 
 def matrix2bytes(s):
+    return "".join(list(map(chr, [i for sublist in s for i in sublist])))
+
+matrix = [
+    [99, 114, 121, 112],
+    [116, 111, 123, 105],
+    [110, 109, 97, 116],
