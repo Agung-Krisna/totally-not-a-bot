@@ -136,3 +136,9 @@ print(matrix2bytes(state))
 
 def bytes2matrix(text):
     """ Converts a 16-byte array into a 4x4 matrix.  """
+    return [list(text[i:i+4]) for i in range(0, len(text), 4)]
+
+def matrix2bytes(s):
+    return "".join(list(map(chr, [i for sublist in s for i in sublist])))
+
+matrix = [
