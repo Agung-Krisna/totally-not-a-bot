@@ -52,3 +52,9 @@ state = [
 
 def matrix2bytes(s):
     return "".join(list(map(chr, [i for sublist in s for i in sublist])))
+
+print(state)
+inv_mix_columns(state)
+inv_shift_rows(state)
+
+s_box = (
