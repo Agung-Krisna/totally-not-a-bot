@@ -40,3 +40,9 @@ def inv_mix_columns(s):
         s[i][2] ^= u
         s[i][3] ^= v
 
+    mix_columns(s)
+
+
+state = [
+    [108, 106, 71, 86],
+    [96, 62, 38, 72],
