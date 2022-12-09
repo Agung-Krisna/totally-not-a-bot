@@ -106,3 +106,15 @@ state = [
 def sub_bytes(s, sbox=s_box):
     return "".join(list(map(chr, [sbox[j] for sublist in s for j in sublist])))
 
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+print(sub_bytes(state, sbox=inv_s_box))
+
+print(matrix2bytes(state))
+
+def bytes2matrix(text):
+    """ Converts a 16-byte array into a 4x4 matrix.  """
+    return [list(text[i:i+4]) for i in range(0, len(text), 4)]
+
+def matrix2bytes(s):
